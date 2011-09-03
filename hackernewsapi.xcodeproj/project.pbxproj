@@ -17,6 +17,11 @@
 		DE99FC3414127DFC007A9F00 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE99FC3214127DFC007A9F00 /* MainWindow_iPhone.xib */; };
 		DE99FC3814127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC3714127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m */; };
 		DE99FC3B14127DFC007A9F00 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE99FC3914127DFC007A9F00 /* MainWindow_iPad.xib */; };
+		DE99FC471412870F007A9F00 /* NewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC461412870F007A9F00 /* NewsListViewController.m */; };
+		DE99FC4C141288EC007A9F00 /* NewListViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC4A141288EC007A9F00 /* NewListViewController_iPhone.m */; };
+		DE99FC4D141288EC007A9F00 /* NewListViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE99FC4B141288EC007A9F00 /* NewListViewController_iPhone.xib */; };
+		DE99FC5314128BF7007A9F00 /* NewsListViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC5114128BF7007A9F00 /* NewsListViewController_iPad.m */; };
+		DE99FC5414128BF7007A9F00 /* NewsListViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE99FC5214128BF7007A9F00 /* NewsListViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +29,26 @@
 		DE99FC1C14127DFC007A9F00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE99FC1E14127DFC007A9F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE99FC2014127DFC007A9F00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DE99FC2414127DFC007A9F00 /* hackernewsapi-Info.plist */ = {isa = PBXFileReference; path = "hackernewsapi-Info.plist"; sourceTree = "<group>"; };
+		DE99FC2414127DFC007A9F00 /* hackernewsapi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hackernewsapi-Info.plist"; sourceTree = "<group>"; };
 		DE99FC2614127DFC007A9F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE99FC2814127DFC007A9F00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DE99FC2A14127DFC007A9F00 /* hackernewsapi-Prefix.pch */ = {isa = PBXFileReference; path = "hackernewsapi-Prefix.pch"; sourceTree = "<group>"; };
-		DE99FC2B14127DFC007A9F00 /* hackernewsapiAppDelegate.h */ = {isa = PBXFileReference; path = hackernewsapiAppDelegate.h; sourceTree = "<group>"; };
+		DE99FC2A14127DFC007A9F00 /* hackernewsapi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hackernewsapi-Prefix.pch"; sourceTree = "<group>"; };
+		DE99FC2B14127DFC007A9F00 /* hackernewsapiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hackernewsapiAppDelegate.h; sourceTree = "<group>"; };
 		DE99FC2C14127DFC007A9F00 /* hackernewsapiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackernewsapiAppDelegate.m; sourceTree = "<group>"; };
-		DE99FC2F14127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = hackernewsapiAppDelegate_iPhone.h; path = iPhone/hackernewsapiAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		DE99FC2F14127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hackernewsapiAppDelegate_iPhone.h; path = iPhone/hackernewsapiAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		DE99FC3014127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = hackernewsapiAppDelegate_iPhone.m; path = iPhone/hackernewsapiAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		DE99FC3314127DFC007A9F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		DE99FC3614127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.h */ = {isa = PBXFileReference; name = hackernewsapiAppDelegate_iPad.h; path = iPad/hackernewsapiAppDelegate_iPad.h; sourceTree = "<group>"; };
+		DE99FC3614127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hackernewsapiAppDelegate_iPad.h; path = iPad/hackernewsapiAppDelegate_iPad.h; sourceTree = "<group>"; };
 		DE99FC3714127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = hackernewsapiAppDelegate_iPad.m; path = iPad/hackernewsapiAppDelegate_iPad.m; sourceTree = "<group>"; };
 		DE99FC3A14127DFC007A9F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		DE99FC451412870F007A9F00 /* NewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListViewController.h; sourceTree = "<group>"; };
+		DE99FC461412870F007A9F00 /* NewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListViewController.m; sourceTree = "<group>"; };
+		DE99FC49141288EC007A9F00 /* NewListViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewListViewController_iPhone.h; sourceTree = "<group>"; };
+		DE99FC4A141288EC007A9F00 /* NewListViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewListViewController_iPhone.m; sourceTree = "<group>"; };
+		DE99FC4B141288EC007A9F00 /* NewListViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewListViewController_iPhone.xib; sourceTree = "<group>"; };
+		DE99FC5014128BF7007A9F00 /* NewsListViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListViewController_iPad.h; sourceTree = "<group>"; };
+		DE99FC5114128BF7007A9F00 /* NewsListViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListViewController_iPad.m; sourceTree = "<group>"; };
+		DE99FC5214128BF7007A9F00 /* NewsListViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsListViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +97,7 @@
 			children = (
 				DE99FC2B14127DFC007A9F00 /* hackernewsapiAppDelegate.h */,
 				DE99FC2C14127DFC007A9F00 /* hackernewsapiAppDelegate.m */,
+				DE99FC481412882D007A9F00 /* View Controllers */,
 				DE99FC2E14127DFC007A9F00 /* iPhone */,
 				DE99FC3514127DFC007A9F00 /* iPad */,
 				DE99FC2314127DFC007A9F00 /* Supporting Files */,
@@ -105,9 +119,11 @@
 		DE99FC2E14127DFC007A9F00 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FC4E141288F4007A9F00 /* View Controllers */,
+				DE99FC4214127E7B007A9F00 /* Images */,
+				DE99FC4114127E5A007A9F00 /* Nibs */,
 				DE99FC2F14127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.h */,
 				DE99FC3014127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m */,
-				DE99FC3214127DFC007A9F00 /* MainWindow_iPhone.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -115,11 +131,72 @@
 		DE99FC3514127DFC007A9F00 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FC4F14128BA3007A9F00 /* View Controllers */,
+				DE99FC4414127E9A007A9F00 /* Nibs */,
+				DE99FC4314127E90007A9F00 /* Images */,
 				DE99FC3614127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.h */,
 				DE99FC3714127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m */,
-				DE99FC3914127DFC007A9F00 /* MainWindow_iPad.xib */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		DE99FC4114127E5A007A9F00 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC4B141288EC007A9F00 /* NewListViewController_iPhone.xib */,
+				DE99FC3214127DFC007A9F00 /* MainWindow_iPhone.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		DE99FC4214127E7B007A9F00 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DE99FC4314127E90007A9F00 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DE99FC4414127E9A007A9F00 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC5214128BF7007A9F00 /* NewsListViewController_iPad.xib */,
+				DE99FC3914127DFC007A9F00 /* MainWindow_iPad.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		DE99FC481412882D007A9F00 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC451412870F007A9F00 /* NewsListViewController.h */,
+				DE99FC461412870F007A9F00 /* NewsListViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DE99FC4E141288F4007A9F00 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC49141288EC007A9F00 /* NewListViewController_iPhone.h */,
+				DE99FC4A141288EC007A9F00 /* NewListViewController_iPhone.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DE99FC4F14128BA3007A9F00 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC5014128BF7007A9F00 /* NewsListViewController_iPad.h */,
+				DE99FC5114128BF7007A9F00 /* NewsListViewController_iPad.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +249,8 @@
 				DE99FC2714127DFC007A9F00 /* InfoPlist.strings in Resources */,
 				DE99FC3414127DFC007A9F00 /* MainWindow_iPhone.xib in Resources */,
 				DE99FC3B14127DFC007A9F00 /* MainWindow_iPad.xib in Resources */,
+				DE99FC4D141288EC007A9F00 /* NewListViewController_iPhone.xib in Resources */,
+				DE99FC5414128BF7007A9F00 /* NewsListViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +265,9 @@
 				DE99FC2D14127DFC007A9F00 /* hackernewsapiAppDelegate.m in Sources */,
 				DE99FC3114127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m in Sources */,
 				DE99FC3814127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m in Sources */,
+				DE99FC471412870F007A9F00 /* NewsListViewController.m in Sources */,
+				DE99FC4C141288EC007A9F00 /* NewListViewController_iPhone.m in Sources */,
+				DE99FC5314128BF7007A9F00 /* NewsListViewController_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

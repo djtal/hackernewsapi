@@ -11,6 +11,7 @@
 @implementation hackernewsapiAppDelegate
 
 @synthesize window = _window;
+@synthesize navigationController = _navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -61,6 +62,7 @@
 - (void)dealloc
 {
     [_window release];
+    self.navigationController = nil;
     [super dealloc];
 }
 
