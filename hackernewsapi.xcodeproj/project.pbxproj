@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE99FC1D14127DFC007A9F00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC1C14127DFC007A9F00 /* UIKit.framework */; };
+		DE99FC1F14127DFC007A9F00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC1E14127DFC007A9F00 /* Foundation.framework */; };
+		DE99FC2114127DFC007A9F00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC2014127DFC007A9F00 /* CoreGraphics.framework */; };
+		DE99FC2714127DFC007A9F00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE99FC2514127DFC007A9F00 /* InfoPlist.strings */; };
+		DE99FC2914127DFC007A9F00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC2814127DFC007A9F00 /* main.m */; };
+		DE99FC2D14127DFC007A9F00 /* hackernewsapiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC2C14127DFC007A9F00 /* hackernewsapiAppDelegate.m */; };
+		DE99FC3114127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC3014127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m */; };
+		DE99FC3414127DFC007A9F00 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE99FC3214127DFC007A9F00 /* MainWindow_iPhone.xib */; };
+		DE99FC3814127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC3714127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m */; };
+		DE99FC3B14127DFC007A9F00 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE99FC3914127DFC007A9F00 /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE99FC1814127DFC007A9F00 /* hackernewsapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackernewsapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE99FC1C14127DFC007A9F00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DE99FC1E14127DFC007A9F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DE99FC2014127DFC007A9F00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE99FC2414127DFC007A9F00 /* hackernewsapi-Info.plist */ = {isa = PBXFileReference; path = "hackernewsapi-Info.plist"; sourceTree = "<group>"; };
+		DE99FC2614127DFC007A9F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE99FC2814127DFC007A9F00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE99FC2A14127DFC007A9F00 /* hackernewsapi-Prefix.pch */ = {isa = PBXFileReference; path = "hackernewsapi-Prefix.pch"; sourceTree = "<group>"; };
+		DE99FC2B14127DFC007A9F00 /* hackernewsapiAppDelegate.h */ = {isa = PBXFileReference; path = hackernewsapiAppDelegate.h; sourceTree = "<group>"; };
+		DE99FC2C14127DFC007A9F00 /* hackernewsapiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackernewsapiAppDelegate.m; sourceTree = "<group>"; };
+		DE99FC2F14127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = hackernewsapiAppDelegate_iPhone.h; path = iPhone/hackernewsapiAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		DE99FC3014127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = hackernewsapiAppDelegate_iPhone.m; path = iPhone/hackernewsapiAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		DE99FC3314127DFC007A9F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		DE99FC3614127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.h */ = {isa = PBXFileReference; name = hackernewsapiAppDelegate_iPad.h; path = iPad/hackernewsapiAppDelegate_iPad.h; sourceTree = "<group>"; };
+		DE99FC3714127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = hackernewsapiAppDelegate_iPad.m; path = iPad/hackernewsapiAppDelegate_iPad.m; sourceTree = "<group>"; };
+		DE99FC3A14127DFC007A9F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE99FC1514127DFC007A9F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE99FC1D14127DFC007A9F00 /* UIKit.framework in Frameworks */,
+				DE99FC1F14127DFC007A9F00 /* Foundation.framework in Frameworks */,
+				DE99FC2114127DFC007A9F00 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE99FC0D14127DFC007A9F00 = {
+			isa = PBXGroup;
+			children = (
+				DE99FC2214127DFC007A9F00 /* hackernewsapi */,
+				DE99FC1B14127DFC007A9F00 /* Frameworks */,
+				DE99FC1914127DFC007A9F00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE99FC1914127DFC007A9F00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC1814127DFC007A9F00 /* hackernewsapi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE99FC1B14127DFC007A9F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC1C14127DFC007A9F00 /* UIKit.framework */,
+				DE99FC1E14127DFC007A9F00 /* Foundation.framework */,
+				DE99FC2014127DFC007A9F00 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE99FC2214127DFC007A9F00 /* hackernewsapi */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC2B14127DFC007A9F00 /* hackernewsapiAppDelegate.h */,
+				DE99FC2C14127DFC007A9F00 /* hackernewsapiAppDelegate.m */,
+				DE99FC2E14127DFC007A9F00 /* iPhone */,
+				DE99FC3514127DFC007A9F00 /* iPad */,
+				DE99FC2314127DFC007A9F00 /* Supporting Files */,
+			);
+			path = hackernewsapi;
+			sourceTree = "<group>";
+		};
+		DE99FC2314127DFC007A9F00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC2414127DFC007A9F00 /* hackernewsapi-Info.plist */,
+				DE99FC2514127DFC007A9F00 /* InfoPlist.strings */,
+				DE99FC2814127DFC007A9F00 /* main.m */,
+				DE99FC2A14127DFC007A9F00 /* hackernewsapi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE99FC2E14127DFC007A9F00 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC2F14127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.h */,
+				DE99FC3014127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m */,
+				DE99FC3214127DFC007A9F00 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		DE99FC3514127DFC007A9F00 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC3614127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.h */,
+				DE99FC3714127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m */,
+				DE99FC3914127DFC007A9F00 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE99FC1714127DFC007A9F00 /* hackernewsapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE99FC3E14127DFC007A9F00 /* Build configuration list for PBXNativeTarget "hackernewsapi" */;
+			buildPhases = (
+				DE99FC1414127DFC007A9F00 /* Sources */,
+				DE99FC1514127DFC007A9F00 /* Frameworks */,
+				DE99FC1614127DFC007A9F00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hackernewsapi;
+			productName = hackernewsapi;
+			productReference = DE99FC1814127DFC007A9F00 /* hackernewsapi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE99FC0F14127DFC007A9F00 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DE99FC1214127DFC007A9F00 /* Build configuration list for PBXProject "hackernewsapi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE99FC0D14127DFC007A9F00;
+			productRefGroup = DE99FC1914127DFC007A9F00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE99FC1714127DFC007A9F00 /* hackernewsapi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE99FC1614127DFC007A9F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE99FC2714127DFC007A9F00 /* InfoPlist.strings in Resources */,
+				DE99FC3414127DFC007A9F00 /* MainWindow_iPhone.xib in Resources */,
+				DE99FC3B14127DFC007A9F00 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE99FC1414127DFC007A9F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE99FC2914127DFC007A9F00 /* main.m in Sources */,
+				DE99FC2D14127DFC007A9F00 /* hackernewsapiAppDelegate.m in Sources */,
+				DE99FC3114127DFC007A9F00 /* hackernewsapiAppDelegate_iPhone.m in Sources */,
+				DE99FC3814127DFC007A9F00 /* hackernewsapiAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE99FC2514127DFC007A9F00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE99FC2614127DFC007A9F00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DE99FC3214127DFC007A9F00 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE99FC3314127DFC007A9F00 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		DE99FC3914127DFC007A9F00 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE99FC3A14127DFC007A9F00 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE99FC3C14127DFC007A9F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE99FC3D14127DFC007A9F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE99FC3F14127DFC007A9F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hackernewsapi/hackernewsapi-Prefix.pch";
+				INFOPLIST_FILE = "hackernewsapi/hackernewsapi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DE99FC4014127DFC007A9F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hackernewsapi/hackernewsapi-Prefix.pch";
+				INFOPLIST_FILE = "hackernewsapi/hackernewsapi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE99FC1214127DFC007A9F00 /* Build configuration list for PBXProject "hackernewsapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE99FC3C14127DFC007A9F00 /* Debug */,
+				DE99FC3D14127DFC007A9F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE99FC3E14127DFC007A9F00 /* Build configuration list for PBXNativeTarget "hackernewsapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE99FC3F14127DFC007A9F00 /* Debug */,
+				DE99FC4014127DFC007A9F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE99FC0F14127DFC007A9F00 /* Project object */;
+}
