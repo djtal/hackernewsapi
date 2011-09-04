@@ -10,7 +10,7 @@
 
 static HackerNewsAPIClient *_sharedClient = nil;
 
-NSString * const kAFGowallaBaseURLString = @"http://api.thriftdb.com/api.hnsearch.com";
+NSString * const kHackerNewsBaseURLString = @"http://api.thriftdb.com/api.hnsearch.com/";
 
 @implementation HackerNewsAPIClient
 
@@ -32,6 +32,10 @@ NSString * const kAFGowallaBaseURLString = @"http://api.thriftdb.com/api.hnsearc
     }
     
     return _sharedClient;
+}
+
++ (NSURL *)baseURL {
+    return [NSURL URLWithString:kHackerNewsBaseURLString];
 }
 
 @end

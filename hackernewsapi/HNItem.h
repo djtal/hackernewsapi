@@ -13,6 +13,6 @@
 }
 
 @property (nonatomic, retain) NSString* title;
-
++ (NSArray*)getLatest;
 
 @end

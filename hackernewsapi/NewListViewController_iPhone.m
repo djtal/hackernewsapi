@@ -7,6 +7,7 @@
 //
 
 #import "NewListViewController_iPhone.h"
+#import "HNItem.h"
 
 @implementation NewListViewController_iPhone
 
@@ -44,7 +45,8 @@
     {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-    
+    //HNItem *item = [self.headlines objectAtIndex:indexPath.row];
+    //cell.textLabel.text = item.title;
     cell.textLabel.text = @"Vertical Table Rows on iPhone";
     
     return cell;

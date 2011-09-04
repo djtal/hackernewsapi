@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsListViewController : UITableViewController
+@interface NewsListViewController : UITableViewController {
+    NSArray *headlines;
+}
 
+@property (nonatomic, retain) NSArray *headlines;
 @end
