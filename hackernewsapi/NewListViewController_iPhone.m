@@ -45,9 +45,14 @@
     {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-    //HNItem *item = [self.headlines objectAtIndex:indexPath.row];
-    //cell.textLabel.text = item.title;
-    cell.textLabel.text = @"Vertical Table Rows on iPhone";
+    HNItem *item = [self.headlines objectAtIndex:indexPath.row];
+    if (item.title != NULL) {
+        cell.textLabel.text = item.title;
+    } else {
+        cell.textLabel.text = @"Unknow";
+    }
+    
+    //cell.textLabel.text = @"Vertical Table Rows on iPhone";
     
     return cell;
 }

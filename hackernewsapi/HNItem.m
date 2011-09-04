@@ -7,7 +7,6 @@
 //
 
 #import "HNItem.h"
-#import "HackerNewsAPIClient.h"
 
 
 @implementation HNItem
@@ -23,24 +22,4 @@
     
     return self;
 }
-
-+ (NSArray*)getLatest{
-    NSMutableArray *lastesHeadlines = [[NSMutableArray alloc] init];
-    NSDictionary *parameters = [[NSDictionary alloc] init];
-    HackerNewsAPIClient *restClient = [HackerNewsAPIClient sharedClient];
-    [restClient getPath:@"items/_search" parameters:parameters success:^(id response) {
-        NSMutableArray *mutableRecords = [NSMutableArray array];
-        for (NSDictionary *attributes in [response valueForKeyPath:@"results.item"]) {
-            HNItem *item = [[[HNItem alloc] init] autorelease];
-            item.title = [attributes objectForKey:@"title"];
-            [lastesHeadlines addObject:item];
-            
-        }
-    } failure:^(NSError *error) {
-        NSLog(@"error");
-    }];
-    return lastesHeadlines;
-
-}
-
 @end

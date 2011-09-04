@@ -7,6 +7,7 @@
 //
 
 #import "NewsListViewController.h"
+#import "HackerNewsAPIClient.h"
 #import "HNItem.h"
 
 
@@ -34,7 +35,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.headlines = [HNItem getLatest]; 
+    [self getlastestHeadlinesFromHacknews]; 
 }
 
 - (void)viewDidUnload
@@ -42,6 +43,27 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void)getlastestHeadlinesFromHacknews{
+    NSMutableArray *lastesHeadlines = [[NSMutableArray alloc] init];
+    NSDictionary *parameters = [[NSDictionary alloc] init];
+    HackerNewsAPIClient *restClient = [HackerNewsAPIClient sharedClient];
+    [restClient getPath:@"items/_search" parameters:parameters success:^(id response) {
+        for (NSDictionary *attributes in [response valueForKeyPath:@"results.item"]) {
+            if ([attributes objectForKey:@"title"] != [NSNull null]) {
+                HNItem *item = [[[HNItem alloc] init] autorelease];
+                item.title = [attributes objectForKey:@"title"];
+                [lastesHeadlines addObject:item];
+            }
+
+        }
+        self.headlines = lastesHeadlines;
+        [lastesHeadlines release];
+        [self.tableView reloadData];
+    } failure:^(NSError *error) {
+        NSLog(@"error");
+    }];
 }
 
 
@@ -57,7 +79,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return [self.headlines count];
 }
 
 

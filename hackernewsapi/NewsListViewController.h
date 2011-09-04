@@ -13,4 +13,7 @@
 }
 
 @property (nonatomic, retain) NSArray *headlines;
+
+
+- (void)getlastestHeadlinesFromHacknews;
 @end
