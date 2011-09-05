@@ -51,11 +51,9 @@
     HackerNewsAPIClient *restClient = [HackerNewsAPIClient sharedClient];
     [restClient getPath:@"items/_search" parameters:parameters success:^(id response) {
         for (NSDictionary *attributes in [response valueForKeyPath:@"results.item"]) {
-            if ([attributes objectForKey:@"title"] != [NSNull null]) {
-                HNItem *item = [[[HNItem alloc] init] autorelease];
-                item.title = [attributes objectForKey:@"title"];
-                [lastesHeadlines addObject:item];
-            }
+            HNItem *item = [[HNItem alloc] initFromAttributes:attributes];
+            [lastesHeadlines addObject:item];
+            [item release];
 
         }
         self.headlines = lastesHeadlines;
@@ -64,6 +62,11 @@
     } failure:^(NSError *error) {
         NSLog(@"error");
     }];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self getlastestHeadlinesFromHacknews];
 }
 
 

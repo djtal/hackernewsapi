@@ -12,6 +12,11 @@
 @implementation HNItem
 
 @synthesize title;
+@synthesize type;
+@synthesize comments;
+
+NSString * const kCommentType = @"comment";
+NSString * const kArticleType = @"submission";
 
 - (id)init
 {
@@ -21,5 +26,30 @@
     }
     
     return self;
+}
+
+- (HNItem*)initFromAttributes:(NSDictionary*)attribute{
+    if ([self init]) {
+        if (attribute) {
+            NSString *tmpTitle;
+            //type first
+            if ([[attribute objectForKey:@"type"] isEqualToString:kArticleType]) {
+                self.type = HNArticle;
+                tmpTitle = [[NSString alloc] initWithString:[attribute objectForKey:@"title"]];
+            } else {
+                self.type = HNComment;
+                tmpTitle = [[NSString alloc] initWithString: [[attribute objectForKey:@"discussion"] objectForKey:@"title"]];
+            }
+            
+            self.title = tmpTitle;
+            [tmpTitle release];
+        }
+    }
+    return self;
+         
+}
+
++ (HNItem*)itemFromAttribute:(NSDictionary*)attribute{
+    
 }
 @end

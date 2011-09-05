@@ -43,14 +43,15 @@
     
     if (cell == nil) 
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     HNItem *item = [self.headlines objectAtIndex:indexPath.row];
-    if (item.title != NULL) {
-        cell.textLabel.text = item.title;
-    } else {
-        cell.textLabel.text = @"Unknow";
-    }
+    if (item.type == HNArticle)
+        cell.imageView.image = [UIImage imageNamed:@"article_32x32"];
+    else
+        cell.imageView.image = [UIImage imageNamed:@"comment_alt2_stroke_32x24"];
+    cell.textLabel.text = item.title;
+
     
     //cell.textLabel.text = @"Vertical Table Rows on iPhone";
     

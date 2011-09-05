@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE7FC39D1415589400D2358F /* comment_alt2_stroke_32x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7FC39C1415589400D2358F /* comment_alt2_stroke_32x24.png */; };
+		DE7FC3A614155B3D00D2358F /* Y.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7FC3A514155B3C00D2358F /* Y.png */; };
+		DE7FC3A814155B4400D2358F /* Y@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7FC3A714155B4400D2358F /* Y@2x.png */; };
+		DE7FC3AA14155C4100D2358F /* article_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7FC3A914155C4100D2358F /* article_32x32.png */; };
 		DE99FC1D14127DFC007A9F00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC1C14127DFC007A9F00 /* UIKit.framework */; };
 		DE99FC1F14127DFC007A9F00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC1E14127DFC007A9F00 /* Foundation.framework */; };
 		DE99FC2114127DFC007A9F00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC2014127DFC007A9F00 /* CoreGraphics.framework */; };
@@ -42,6 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE7FC39C1415589400D2358F /* comment_alt2_stroke_32x24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment_alt2_stroke_32x24.png; sourceTree = "<group>"; };
+		DE7FC3A514155B3C00D2358F /* Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Y.png; sourceTree = "<group>"; };
+		DE7FC3A714155B4400D2358F /* Y@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Y@2x.png"; sourceTree = "<group>"; };
+		DE7FC3A914155C4100D2358F /* article_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = article_32x32.png; sourceTree = "<group>"; };
 		DE99FC1814127DFC007A9F00 /* hackernewsapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackernewsapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99FC1C14127DFC007A9F00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE99FC1E14127DFC007A9F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +125,8 @@
 		DE99FC0D14127DFC007A9F00 = {
 			isa = PBXGroup;
 			children = (
+				DE7FC3A714155B4400D2358F /* Y@2x.png */,
+				DE7FC3A514155B3C00D2358F /* Y.png */,
 				DE99FC2214127DFC007A9F00 /* hackernewsapi */,
 				DE99FC1B14127DFC007A9F00 /* Frameworks */,
 				DE99FC1914127DFC007A9F00 /* Products */,
@@ -208,6 +218,8 @@
 		DE99FC4214127E7B007A9F00 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DE7FC3A914155C4100D2358F /* article_32x32.png */,
+				DE7FC39C1415589400D2358F /* comment_alt2_stroke_32x24.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -349,6 +361,10 @@
 				DE99FC5414128BF7007A9F00 /* NewsListViewController_iPad.xib in Resources */,
 				DE99FC62141292F9007A9F00 /* CHANGELOG.md in Resources */,
 				DE99FC64141292F9007A9F00 /* README.md in Resources */,
+				DE7FC39D1415589400D2358F /* comment_alt2_stroke_32x24.png in Resources */,
+				DE7FC3A614155B3D00D2358F /* Y.png in Resources */,
+				DE7FC3A814155B4400D2358F /* Y@2x.png in Resources */,
+				DE7FC3AA14155C4100D2358F /* article_32x32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +515,7 @@
 				DE99FC4014127DFC007A9F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

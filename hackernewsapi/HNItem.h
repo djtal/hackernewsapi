@@ -8,10 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    HNArticle,
+    HNComment
+} HNItemType;
+
 @interface HNItem : NSObject{
     NSString *title;
+    NSInteger type;
+    NSInteger *comments;
+    
 }
 
 @property (nonatomic, retain) NSString* title;
+@property (nonatomic, assign) NSInteger type;
+@property (nonatomic, assign) NSInteger* comments;
+
+
+
+- (HNItem*)initFromAttributes:(NSDictionary*)attribute;
++ (HNItem*)itemFromAttribute:(NSDictionary*)attribute;
 
 @end
