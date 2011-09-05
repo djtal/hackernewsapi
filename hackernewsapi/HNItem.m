@@ -38,7 +38,13 @@ NSString * const kArticleType = @"submission";
                 tmpTitle = [[NSString alloc] initWithString:[attribute objectForKey:@"title"]];
             } else {
                 self.type = HNComment;
-                tmpTitle = [[NSString alloc] initWithString: [[attribute objectForKey:@"discussion"] objectForKey:@"title"]];
+                NSDictionary *discussion = [attribute objectForKey:@"discussion"];
+                if (![discussion isEqual:[NSNull null]])
+                {
+                    tmpTitle = [[NSString alloc] initWithString: [discussion objectForKey:@"title"]];
+                }
+                else
+                   tmpTitle = @"unknow title"; 
             }
             
             self.title = tmpTitle;

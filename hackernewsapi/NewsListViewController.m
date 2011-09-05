@@ -14,6 +14,7 @@
 @implementation NewsListViewController
 
 @synthesize headlines;
+@synthesize searchBar;
 
 
 - (void)didReceiveMemoryWarning
@@ -44,10 +45,17 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
+- (NSIndexPath*)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [searchBar resignFirstResponder];
+    return indexPath;
+}
 
 - (void)getlastestHeadlinesFromHacknews{
+    [self getlastestHeadlinesFromHacknewsWithQuery:nil];
+}
+
+- (void)getlastestHeadlinesFromHacknewsWithQuery:(NSDictionary*)parameters{
     NSMutableArray *lastesHeadlines = [[NSMutableArray alloc] init];
-    NSDictionary *parameters = [[NSDictionary alloc] init];
     HackerNewsAPIClient *restClient = [HackerNewsAPIClient sharedClient];
     [restClient getPath:@"items/_search" parameters:parameters success:^(id response) {
         for (NSDictionary *attributes in [response valueForKeyPath:@"results.item"]) {
@@ -83,6 +91,34 @@
 {
     // Return the number of rows in the section.
     return [self.headlines count];
+}
+
+#pragma mark - search methods
+
+- (void)resetSearch{
+    self.headlines = nil;
+}
+
+- (void)handleSearchTermFor:(NSString*)searchTerm{
+    [self getlastestHeadlinesFromHacknewsWithQuery:[NSDictionary dictionaryWithObject:searchTerm forKey:@"q"]];
+}
+
+
+#pragma mark - Search Bar Delagate Methods
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    searchBar.text = @"";
+    [self.tableView reloadData];
+    [searchBar resignFirstResponder];
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    if ([searchText length] == 0) {
+        [self resetSearch];
+        [self.tableView reloadData];
+        return;
+    }
+    [self handleSearchTermFor:searchText];
 }
 
 

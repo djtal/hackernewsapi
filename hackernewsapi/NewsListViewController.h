@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsListViewController : UITableViewController {
+@interface NewsListViewController : UITableViewController 
+            <UISearchBarDelegate>
+{
     NSArray *headlines;
+    UISearchBar *searchBar;
 }
 
 @property (nonatomic, retain) NSArray *headlines;
-
+@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
 
 - (void)getlastestHeadlinesFromHacknews;
+- (void)getlastestHeadlinesFromHacknewsWithQuery:(NSDictionary*)parameters;
 @end
