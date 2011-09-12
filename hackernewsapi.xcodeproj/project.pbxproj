@@ -11,6 +11,10 @@
 		DE7FC3A614155B3D00D2358F /* Y.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7FC3A514155B3C00D2358F /* Y.png */; };
 		DE7FC3A814155B4400D2358F /* Y@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7FC3A714155B4400D2358F /* Y@2x.png */; };
 		DE7FC3AA14155C4100D2358F /* article_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7FC3A914155C4100D2358F /* article_32x32.png */; };
+		DE80D18214180DC600AB21EB /* HNRssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE80D18114180DC600AB21EB /* HNRssViewController.m */; };
+		DE80D18614180E8B00AB21EB /* HNRssViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DE80D18514180E8B00AB21EB /* HNRssViewController_iPhone.m */; };
+		DE857116141D2725009B1EA0 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DE857115141D2725009B1EA0 /* GDataXMLNode.m */; };
+		DE85711B141D27D4009B1EA0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE85711A141D27D4009B1EA0 /* libxml2.dylib */; };
 		DE99FC1D14127DFC007A9F00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC1C14127DFC007A9F00 /* UIKit.framework */; };
 		DE99FC1F14127DFC007A9F00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC1E14127DFC007A9F00 /* Foundation.framework */; };
 		DE99FC2114127DFC007A9F00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99FC2014127DFC007A9F00 /* CoreGraphics.framework */; };
@@ -50,6 +54,13 @@
 		DE7FC3A514155B3C00D2358F /* Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Y.png; sourceTree = "<group>"; };
 		DE7FC3A714155B4400D2358F /* Y@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Y@2x.png"; sourceTree = "<group>"; };
 		DE7FC3A914155C4100D2358F /* article_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = article_32x32.png; sourceTree = "<group>"; };
+		DE80D18014180DC600AB21EB /* HNRssViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRssViewController.h; sourceTree = "<group>"; };
+		DE80D18114180DC600AB21EB /* HNRssViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNRssViewController.m; sourceTree = "<group>"; };
+		DE80D18414180E8B00AB21EB /* HNRssViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRssViewController_iPhone.h; sourceTree = "<group>"; };
+		DE80D18514180E8B00AB21EB /* HNRssViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNRssViewController_iPhone.m; sourceTree = "<group>"; };
+		DE857114141D2725009B1EA0 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		DE857115141D2725009B1EA0 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		DE85711A141D27D4009B1EA0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		DE99FC1814127DFC007A9F00 /* hackernewsapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackernewsapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99FC1C14127DFC007A9F00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE99FC1E14127DFC007A9F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE85711B141D27D4009B1EA0 /* libxml2.dylib in Frameworks */,
 				DE99FCAE14129691007A9F00 /* libz.dylib in Frameworks */,
 				DE99FC1D14127DFC007A9F00 /* UIKit.framework in Frameworks */,
 				DE99FC1F14127DFC007A9F00 /* Foundation.framework in Frameworks */,
@@ -122,9 +134,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE857113141D2725009B1EA0 /* XMLSupport */ = {
+			isa = PBXGroup;
+			children = (
+				DE857114141D2725009B1EA0 /* GDataXMLNode.h */,
+				DE857115141D2725009B1EA0 /* GDataXMLNode.m */,
+			);
+			path = XMLSupport;
+			sourceTree = "<group>";
+		};
 		DE99FC0D14127DFC007A9F00 = {
 			isa = PBXGroup;
 			children = (
+				DE85711A141D27D4009B1EA0 /* libxml2.dylib */,
 				DE7FC3A714155B4400D2358F /* Y@2x.png */,
 				DE7FC3A514155B3C00D2358F /* Y.png */,
 				DE99FC2214127DFC007A9F00 /* hackernewsapi */,
@@ -155,6 +177,7 @@
 		DE99FC2214127DFC007A9F00 /* hackernewsapi */ = {
 			isa = PBXGroup;
 			children = (
+				DE857113141D2725009B1EA0 /* XMLSupport */,
 				DE99FC8B14129498007A9F00 /* AFNetworking */,
 				DE99FC5D141292F9007A9F00 /* JSONKit */,
 				DE99FC2B14127DFC007A9F00 /* hackernewsapiAppDelegate.h */,
@@ -245,6 +268,8 @@
 			children = (
 				DE99FC451412870F007A9F00 /* NewsListViewController.h */,
 				DE99FC461412870F007A9F00 /* NewsListViewController.m */,
+				DE80D18014180DC600AB21EB /* HNRssViewController.h */,
+				DE80D18114180DC600AB21EB /* HNRssViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -254,6 +279,8 @@
 			children = (
 				DE99FC49141288EC007A9F00 /* NewListViewController_iPhone.h */,
 				DE99FC4A141288EC007A9F00 /* NewListViewController_iPhone.m */,
+				DE80D18414180E8B00AB21EB /* HNRssViewController_iPhone.h */,
+				DE80D18514180E8B00AB21EB /* HNRssViewController_iPhone.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -396,6 +423,9 @@
 				DE99FCAC14129498007A9F00 /* UIImageView+AFNetworking.m in Sources */,
 				DE99FCB1141297C3007A9F00 /* HackerNewsAPIClient.m in Sources */,
 				DE99FCB4141299DB007A9F00 /* HNItem.m in Sources */,
+				DE80D18214180DC600AB21EB /* HNRssViewController.m in Sources */,
+				DE80D18614180E8B00AB21EB /* HNRssViewController_iPhone.m in Sources */,
+				DE857116141D2725009B1EA0 /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +509,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hackernewsapi/hackernewsapi-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
 				INFOPLIST_FILE = "hackernewsapi/hackernewsapi-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -490,7 +522,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hackernewsapi/hackernewsapi-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
 				INFOPLIST_FILE = "hackernewsapi/hackernewsapi-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
